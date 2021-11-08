@@ -1,0 +1,215 @@
+*{
+ font-family: 'Architects Daughter';
+  font-style: normal;
+  text-align: center;
+ 
+  
+}
+.fondo{
+    background-color: black;
+}
+.cuerpo{
+    background-image: linear-gradient(to right,#00c19c,#007d92,#003d97,#ffc977,#ff9ca3);
+    height:90px;
+  
+}
+label{
+    font-size: 35px;
+     text-align: center;
+}
+
+.tablero{
+    box-shadow: 1px 1px 10px 0 rgba(243, 241, 237, 0.952);
+    border-radius: 10px;
+    margin-top: 10px;
+    background-image: linear-gradient(to right,#EB5403,#EBA503,#F2E325,#ffc977,#F25425);
+    justify-content:center;
+    display:flex;
+    
+    
+
+}
+
+@media screen and (max-width: 768px) {
+   
+    
+    #caja2,#caja1,#caja3{
+        margin:10px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .padre {
+        display:flex;
+     
+        flex-direction: column;
+        
+        
+      }
+      .hijos{
+     align-self: center;
+     
+    }
+    #caja2,#caja1,#caja3{
+        margin-bottom:10px;
+        height: 400px;
+    }
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.padre{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    margin:10px;
+    height:100%;
+   
+}
+.tiros{
+    display:flex;
+}
+.encabezado{
+    display: flex;
+    
+    box-shadow: 1px 1px 10px 0 rgba(252, 246, 246, 0.952);
+    justify-content:flex-end;
+    font-size: 25px;
+    padding-right: 70px;
+    height: 30px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+.hijos{
+    margin:10px;
+    height:340px;
+    background-color:white;
+    width:280px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0 rgba(243, 241, 237, 0.952);
+    margin-bottom: 500px;
+}
+
+
+
+
+ 
+label{
+    margin:5px 5px 5px 5px;
+    
+}
+   
+   
+
+#caja1{
+
+    background-image: linear-gradient(to right,#0FF343,#2E9345,#28EA54,#AFF0BE,#03220A);
+   
+}
+.relleno{
+
+ border-radius: 10px;
+    background-color: white;
+    display:flex;
+    width:95%;
+    margin: 6px;
+    justify-content:space-between;
+    
+}
+.relleno2{
+    border-radius: 10px;
+    background-color: white;
+    margin:10px 10px 10px 10px;
+
+}
+.relleno3{
+    border-radius: 10px;
+    background-color: white;
+    margin:10px 10px 10px 10px;
+    height:70%;
+    padding-top: 10px;
+
+
+}
+#caja2{
+    background-image: linear-gradient(to right,#A91304,#D92F1E,#7B1005,#B51505,#DD0B25);
+}
+#caja3{
+    background-image: linear-gradient(to right,#DF224B,#E456AE,#C63064,#F75990,#F00A5A);
+}
+.icon{
+    margin-top:20px;
+}
+.iconos{
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 40px;
+}
+#amarillo{
+    box-shadow: 1px 1px 10px 0 rgba(243, 228, 24, 0.952);
+}
+#verde{
+    box-shadow: 1px 1px 10px 0 rgba(61, 243, 24, 0.952);
+}
+#rosa{
+    box-shadow: 1px 1px 10px 0 rgba(243, 24, 144, 0.952);
+}
+#piedra{
+    box-shadow: 1px 1px 10px 0 rgba(243, 228, 24, 0.952);
+}
+
+#papel{
+    box-shadow: 1px 1px 10px 0 rgba(243, 24, 144, 0.952);
+}
+#tijera{
+    box-shadow: 1px 1px 10px 0 rgba(61, 243, 24, 0.952);
+}
+#piedra:hover{
+opacity: .5;
+}
+#tijera:hover{
+    opacity: .5;
+    }
+#papel:hover{
+        opacity: .5;
+        }
+#defait{
+    color:#7B1005;
+}
+#victoire{
+    color:green;
+}
+#match{
+    color:orange ;
+}
+p{
+    font-size: 20px;
+}
+td{
+    text-align: left;
+}
+.narracion{
+    color:#AFF0BE;
+}

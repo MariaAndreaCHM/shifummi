@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <script src="JS/Function.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="icon" href="Images/logo.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>
+            SHIFUMII
+        </title>
+    
+
+       
+        
+    </head>
+    <body class="fondo" onload="play();" >
+      <div >
+          <header  class="cuerpo">
+              <label style="color:white; font-size: 35px;">SHIFUMII</label>
+          </header>
+          <p class="narracion"></p>
+           <div class="encabezado">
+             
+                <nav>
+                  <a href="#myModal" data-toggle="modal" style="color:palevioletred" >Règles</a>
+                  
+                  <a href="#record" data-toggle="modal" style="color:paleturquoise">Record</a>
+                  <a href="#info"data-toggle="modal" style="color: yellow;">Info</a>
+                  
+                  
+                </nav>
+
+           </div>
+          <div class="container" >
+              <div   id="score" >
+                  
+                    <div class="tablero" >
+                     
+                          <div class="relleno">
+                            <div class="indicadores">
+                              <label id="nomJouer" name="nomJouer"></label>
+                            </div>
+                            <div class="indicadores">
+                              <label id="pointsJouer" name="pointsJouer"></label>
+                            </div>
+                             :
+                             <div class="indicadores">
+                              <label >Ordinateur</label>
+                            </div>
+                            <div class="indicadores">
+                              <label id="PointsOrdinateur"></label>
+                            </div>
+                              
+                          </div>
+                    </div>
+                  
+              </div>
+
+              <div class="padre">
+                    <div class="hijos" id="caja1">
+                        <div class="relleno2">
+                          <h2 id="nom1"></h2>
+                        </div>
+                        <div class=relleno3>
+                            
+                              <img src="Images/piedra.png" alt="pierre" width="85px"  id="piedra"class="iconos"/>
+                            
+                            
+                              <img src="Images/papel.png" alt="papel" width="85px" id="papel" class="iconos" />
+                            
+                             
+                              
+                                <img src="Images/tijera.png" alt="tijera" width="85px" id="tijera" class="iconos"/>
+
+                             
+                              
+                            
+                        </div>
+                    </div>
+                    <div class="hijos" id="caja2">
+                        <div class="relleno2">
+                          <h2 >Jeu</h2>
+                        </div>
+                        <div class=relleno3>
+                
+                         <div class="tiros">
+                          <div id="tiroJugador"  > </div>
+                          
+                            
+                          <div id="tiroPc"> </div>
+                      
+                         </div>
+                          
+                         
+                        </div>
+                    </div>
+                    <div class="hijos" id="caja3">
+                        <div class="relleno2">
+                          <h2 >Ordinateur</h2>
+                        </div>
+                        <div class=relleno3>
+                          
+                            <img src="Images/piedra.png" alt="pierre" width="85px" id="amarillo" class="iconos"/>
+                          
+                          
+                            <img src="Images/papel.png" alt="papel" width="85px" id="rosa" class="iconos" />
+                         
+                           
+                            
+                            <img src="Images/tijera.png" alt="tijera" width="85px" id="verde" class="iconos"/>
+
+                            
+                        </div>
+                    </div>
+              </div>
+             
+                  
+             
+          </div>
+          <footer class="cuerpo">
+              
+          </footer>
+      </div>
+
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">Régles</h3>
+            </div>
+            <div class="modal-body">
+              <p>Pour commencer les joueurs comptent jusqu'à trois en mettant la main dans le dos. Une fois à trois les joueurs révèlent leur main (pierre, feuille ou ciseaux) en même temps. La plus forte des formes l'emporte et le joueur marque le point gagnant. Si les deux joueurs utilisent la même forme c'est un match nul.</p>
+              <p id="victoire">3 points un victoire
+               <img src="Images/trofeo.jpg"  width="35px" />
+              </p>
+              <p id="match">1 point match nul
+                <img src="Images/matchnul.jpeg"  width="35px" />
+              </p>
+              <p id="defait">0 défait
+                <img src="Images/tache.jpeg"  width="25px" />
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="modal fade" id="info" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">Images</h3>
+            </div>
+            <div class="modal-body">
+              <p style="font-size: 12px; text-align: left;">https://www.istockphoto.com/fr/vectoriel/roche-papier-ciseaux-ensemble-dic%C3%B4nes-de-parties-de-corps-gm1269211670-372642551</p>
+              <p style="font-size: 12px; text-align: left;">http://shifumii.com</p>
+              <p style="font-size: 12px; text-align: left;">https://tenor.com/view/nyan-cat-nyan-cat-sticker-dm4uz3-gif-21050281</p>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="record" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">Record</h3>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">SURNOM</th>
+                    <th scope="col">NOMBRE DE POINTS</th>
+                    
+                  </tr>
+                </thead>
+                <tbody id="tabla">
+                  <tr>
+                    <th scope="row" id="indice"></th>
+                    <td id="nombres"></td>
+                    <td id="puntuaciones"></td>
+                    
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+        
+
+
+      
+    </body>
+</html>
